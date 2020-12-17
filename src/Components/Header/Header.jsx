@@ -2,22 +2,35 @@ import { useContext } from 'react'
 import './Header.css'
 
 import { ThemeContext } from '../../ThemeContext'
+import { LanguageContext } from '../../LanguageContext'
+import { languages } from '../../Options'
 
 function Header () {
 
 	const { theme, setTheme } = useContext(ThemeContext)
+	const { language } = useContext( LanguageContext )
 
 	return (
 		<>
 			<header className={theme}>
-				<h1>App</h1>
-				<select
-					defaultValue={theme}
-					onChange={e => setTheme(e.target.value)}
-				>
-					<option value="light">Light</option>
-					<option value="dark">Dark</option>
-				</select>
+				{
+					languages.map((lang) => {
+					if (lang.prop === language) {
+					return (
+						<>
+						<h1>{lang.heading}</h1>
+					<select
+						defaultValue={theme}
+						onChange={e => setTheme(e.target.value)}
+					>
+						<option value="light">{lang.themeLight}</option>
+						<option value="dark">{lang.themeDark}</option>
+					</select>
+						</>
+					)
+					}
+					})
+				}
 			</header>
 		</>
 	)

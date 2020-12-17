@@ -1,11 +1,17 @@
 const languages = [
 	{
 		name: 'English',
-		prop: 'en'
+		prop: 'en',
+		heading: 'Welcome',
+		themeLight: 'Light',
+		themeDark: 'Dark',
 	},
 	{
-		name: 'Russian',
-		prop: 'ru'
+		name: 'Русский',
+		prop: 'ru',
+		heading: 'Добро пожаловать',
+		themeLight: 'Светлая тема',
+		themeDark: 'Темная тема',
 	},
 ]
 

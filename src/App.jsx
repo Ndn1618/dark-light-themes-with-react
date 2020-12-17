@@ -3,17 +3,11 @@ import Footer from './Components/Footer/Footer'
 
 import Login from './Components/Login/Login'
 
-import { languages } from './Options'
-
 function App () {
 
 	return (
 		<>
 			<Header />
-
-			<select>
-				{languages.map((lang, key) => <option key={key} value={lang.prop}>{lang.name}</option>)}
-			</select>
 
 			<Login />
 
