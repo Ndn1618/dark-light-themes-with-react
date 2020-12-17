@@ -26,7 +26,7 @@ function Login () {
 
 	return (
 		<>
-			<div id="login">
+			<div id="login" className='light'>
 
 				<div className='container'>
 				<form onSubmit={onSubmit}>
@@ -52,7 +52,7 @@ function Login () {
 						/>
 					</div>
 					<div>
-						<button disabled={disabled}>
+						<button className='login-button' disabled={disabled}>
 							<span>Login</span>
 						</button>
 					</div>

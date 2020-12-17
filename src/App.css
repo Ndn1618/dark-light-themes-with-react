@@ -4,6 +4,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -27,4 +29,37 @@ select {
 select:focus {
   outline: none;
   box-shadow: 1px 1px 11px #aaa, 1px -1px 11px #aaa;
+}
+
+label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+input {
+  padding: 6px 20px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  font-size: 18px;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+  box-shadow: 5px 5px 10px #ccc;
+}
+
+button {
+  background: none;
+  border: none;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }

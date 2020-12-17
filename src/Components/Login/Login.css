@@ -2,8 +2,19 @@
   padding: 3rem;
 }
 
+#login.light {
+  color: #000;
+}
+
 #login.light .input {
   border-color: #8bc6ec;
+}
+
+#login.dark {
+  color: #fff;
+  background: #0f2027;
+  background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
 }
 
 label {
@@ -14,12 +25,41 @@ label {
   display: flex;
   flex-direction: column;
   padding: 2rem;
-  border: 0.5rem solid black;
   margin-bottom: 1rem;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
-button:disabled {
-  opacity: 0.3;
+
+.dark .input {
+  background: #0f2027;
+  background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  box-shadow: 1px 1px 10px #333;
 }
-select {
-  margin-bottom: 2rem;
+
+.light .input {
+  background-color: #8bc6ec;
+  background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+}
+
+.login-button {
+  margin-left: 15px;
+  margin-top: 7px;
+  padding: 10px 20px;
+}
+
+.light .login-button {
+  background-color: #8bc6ec;
+  background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+}
+
+.dark .login-button {
+  color: #fff;
+  background: #0f2027;
+  background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  box-shadow: 1px 1px 10px #333;
 }

@@ -7,6 +7,14 @@ header.light {
   color: #222;
 }
 header.dark {
-  background: #333;
   color: #fff;
+  background: #0f2027;
+  background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
