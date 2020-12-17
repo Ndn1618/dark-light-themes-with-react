@@ -19,7 +19,7 @@ function Header () {
 					if (lang.prop === language) {
 					return (
 						<>
-						<h1>{lang.heading}</h1>
+						<h1 className='heading-text'>{lang.heading}</h1>
 					<select
 						defaultValue={theme}
 						onChange={e => setTheme(e.target.value)}

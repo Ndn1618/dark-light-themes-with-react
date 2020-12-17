@@ -5,6 +5,9 @@ const languages = [
 		heading: 'Welcome',
 		themeLight: 'Light',
 		themeDark: 'Dark',
+		username: 'Username',
+		password: 'Password',
+		login: 'Login',
 	},
 	{
 		name: 'Русский',
@@ -12,6 +15,9 @@ const languages = [
 		heading: 'Добро пожаловать',
 		themeLight: 'Светлая тема',
 		themeDark: 'Темная тема',
+		username: 'Имя пользователя',
+		password: 'Пароль',
+		login: 'Авторизоваться',
 	},
 ]
 

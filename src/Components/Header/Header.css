@@ -18,3 +18,7 @@ header .container {
   align-items: center;
   justify-content: space-between;
 }
+
+.light .heading-text {
+  font-weight: normal;
+}

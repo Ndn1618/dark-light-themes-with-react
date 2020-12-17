@@ -21,6 +21,11 @@ label {
   cursor: pointer;
   margin-bottom: 1rem;
 }
+
+.dark label {
+  font-weight: bold;
+}
+
 .input {
   display: flex;
   flex-direction: column;
@@ -62,4 +67,5 @@ label {
   background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
   background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
   box-shadow: 1px 1px 10px #333;
+  font-weight: bold;
 }
