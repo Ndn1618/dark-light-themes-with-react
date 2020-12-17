@@ -18,7 +18,7 @@ function Login () {
 
 		setDisabled(!(username.length > 2 && password.length >= 6))
 		// setDisabled(username.length > 2 ? false : true)
-	
+
 	}, [
 		username,
 		password,
@@ -28,6 +28,7 @@ function Login () {
 		<>
 			<div id="login">
 
+				<div className='container'>
 				<form onSubmit={onSubmit}>
 					<div className="input">
 						<label htmlFor="username">Username</label>
@@ -56,6 +57,7 @@ function Login () {
 						</button>
 					</div>
 				</form>
+				</div>
 
 			</div>
 		</>

@@ -13,10 +13,12 @@ function Footer ({ children }) {
 	return (
 		<>
 			<footer className={theme}>
+				<div className='container'>
 				<select defaultValue={language} onChange={evt => setLanguage(evt.target.value)}>
 					{languages.map((lang, key) => <option key={key} value={lang.prop}>{lang.name}</option>)}
 				</select>
-				{children}
+				<p>&copy; Copyright 2020</p>
+				</div>
 			</footer>
 		</>
 	)

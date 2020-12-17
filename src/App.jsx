@@ -11,9 +11,7 @@ function App () {
 
 			<Login />
 
-			<Footer>
-				<p>&copy; Copyright 2020</p>
-			</Footer>
+			<Footer />
 		</>
 	)
 }

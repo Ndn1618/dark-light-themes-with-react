@@ -13,6 +13,7 @@ function Header () {
 	return (
 		<>
 			<header className={theme}>
+				<div className='container'>
 				{
 					languages.map((lang) => {
 					if (lang.prop === language) {
@@ -31,6 +32,7 @@ function Header () {
 					}
 					})
 				}
+				</div>
 			</header>
 		</>
 	)
